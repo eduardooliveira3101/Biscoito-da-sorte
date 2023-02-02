@@ -73,10 +73,9 @@ main {
   font-weight: 400;
   font-size: 2.1rem;
   line-height: 2.9rem;
-
+  animation: downtop 1s 500ms backwards;
   background: #E4EDF1;
   color: #000000;
-  animation: myAnim 2s ease 0s 1 normal forwards;
 }
 
 .btn {
@@ -153,10 +152,22 @@ main {
   }
 }
 
-@keyframes myAnim {
+@keyframes downtop {
+
   0% {
-    transform: translateY(-1.2rem) translateY(10rem);
+    width: 0;
+    height: 0;
+    color: transparent;
+    transform: translateY(15rem);
+    transform: scale(0);
   }
+
+  100% {
+    scale: 1;
+  }
+
+
+ 
 }
 
 @keyframes bounce-in-top {
