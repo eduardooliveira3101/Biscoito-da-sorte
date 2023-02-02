@@ -160,6 +160,7 @@ main {
 }
 
 @keyframes bounce-in-top {
+  
   0% {
     transform: translateY(-500px);
     transform: translateY(-500px);
